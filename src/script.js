@@ -1,12 +1,10 @@
-// 🏰 DESAFÍO SHERPA - SCRAPING ARCANO
-// PASO 1: Autenticación ✅
-// PASO 2: La Danza de los Siglos 🔄
-
-import { chromium } from 'playwright';
+import { createRequire } from 'module';
 import path from 'path';
 import fs from 'fs';
-import { createRequire } from 'module';
+
 import axios from 'axios';
+import { chromium } from 'playwright';
+
 const require = createRequire(import.meta.url);
 const pdfParse = require('pdf-parse');
 
@@ -655,7 +653,6 @@ async function descargarPDF(page, siglo) {
  * @param {string} rutaPDF
  * @returns {Promise<string | null>}
  */
-//TODO: VER ESTO    
 async function extraerCodigoDePDF(rutaPDF) {
     try {
         console.log(`📄 Extrayendo código de: ${rutaPDF}`);
