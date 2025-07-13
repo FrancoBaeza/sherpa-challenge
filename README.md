@@ -20,11 +20,6 @@ cd sherpa-challenge
 npm install
 ```
 
-3. Instala los navegadores de Playwright:
-```bash
-npx playwright install
-```
-
 ## ▶️ Uso
 
 Ejecuta el script con:
